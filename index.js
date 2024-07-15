@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 });
 
 app.get('/fibonacci', (req, res) => {
-    const worker = new Worker('./service.js', {workerData: 40});
+    const worker = new Worker('./worker.js', {workerData: 40});
     worker.on('message', (resolve) => console.log(resolve));
     res.send('fibonacci called');
 })
