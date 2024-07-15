@@ -41,3 +41,23 @@ parentPort.postMessage(fibonacciAt);
 ```
 
 
+---
+
+### Run the project:
+
+* clone the project
+
+    ```$ git clone git@github.com:Saqib29/worker_threads-nodejs.git```
+* go to the directory
+
+    `$ cd worker_threads-nodejs/`
+* install dependency packages
+
+    `$ npm install`
+
+* create .env file and set PORT
+
+    `port=3000`
+* start the server
+
+    `$ npm run start`
